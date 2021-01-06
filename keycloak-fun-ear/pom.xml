@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.keycloak.example</groupId>
+		<artifactId>keycloak-fun-extention</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>keycloak-fun-ear</artifactId>
+	<name>keycloak-fun-ear</name>
+	<packaging>ear</packaging>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.keycloak.example</groupId>
+			<artifactId>themes</artifactId>
+			<version>${project.version}</version>
+			<!-- <type>war</type> -->
+		</dependency>
+		<dependency>
+			<groupId>com.keycloak.example</groupId>
+			<artifactId>keycloak-authentication-spi</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.10.1</version>
+				<configuration>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<modules>
+						<jarModule>
+							<groupId>com.keycloak.example</groupId>
+							<artifactId>keycloak-authentication-spi</artifactId>
+							<includeInApplicationXml>true</includeInApplicationXml>
+							<bundleFileName>keycloak-authentication-spi-${project.version}.jar</bundleFileName>
+							<bundleDir>/</bundleDir>
+						</jarModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

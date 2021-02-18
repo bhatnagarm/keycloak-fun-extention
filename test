@@ -1,0 +1,38 @@
+Hello and welcome to keycloak beginners to Pro course. I'm Mitul Bhatnagar and I'm a microservices expert. I have been working in with DevSecOps for a
+couple of  years now.
+
+
+If you have worked with secure webservices you must have come across Json Web Tokens(JWT) and various Identity Providers which manages them.
+Some of the example of Online Idp services are Google, Facebook, AWS, microsoft etc. Some of the widely used enterprise softwares are Keycloak,
+Azure AD Native, G Suite, Ping Federate etc.
+
+
+This Course is about Keycloak an opensource solution provided by Redhat. Understanding  Keycloak is one of the most sort out skills looked for in
+Corporate IT world. This is because keycloak is a complete opensource solution which can be configured in a highly available manner. It provides
+out of the box authorization & authentication.It can be customized based on the requirements and it can also extend features from other Identity Providers
+extending them to the users. With a complete support to Single Sign On it can be integrated really quickly with applications (Both frontend and Backend).
+The code integration is very simple and designed to make least changes to the application logic.
+
+
+So are you ready to venture into the world of keycloak and learn about this amazing security software for applications. Welcome on board and lets begin.
+
+
+Part 2: Installation of Keycloak
+01_Keycloak_Install: In the next chapter we are going to look at doing the same thing we did in this chapter but using Docker.
+02_Keycloak_Docker_install: In the comming chapter we will be examining installation of a Postgres Database and linking it to our docker image.
+03_Keycloak_install_Custom_DB:
+
+
+Part 3: Administration
+01_Overview:
+02_Realms:  Next on we are going to look at what are Roles and Groups. And also how we can use it later.
+03_Roles&Group: Following this chapter we are going to look at Client setup in keycloak.
+04_Client_Setup: In the upcoming chapter we are going to look at Email setup in keycloak.
+05_Email_Setup: In the following chapter we are going to look at Protocol Mappers in keycloak.
+06_Protocol_Mappers: In the next chapter we are going to look at how Authentication Flows work in keycloak.
+07_Authentication_Flow: Now lets look at how Identity Providers can be extended and other identity integrated with Keycloak in the next chapter.
+
+
+Part 4: Customization UI
+01_Customize_Base_UI:
+02_Customize_redirect:

@@ -18,7 +18,7 @@ public class CustomUserFederationProviderFactory
 
     private static final Logger log = Logger.getLogger(CustomUserFederationProviderFactory.class);
 
-    @EJB(lookup = "ejb/DiscUserFederationProvider")
+    @EJB(lookup = "ejb/CustomUserFederationProvider")
     private transient CustomUserFederationProviderLocal provider;
 
 

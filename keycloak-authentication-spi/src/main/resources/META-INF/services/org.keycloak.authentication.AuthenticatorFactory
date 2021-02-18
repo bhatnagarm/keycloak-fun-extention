@@ -1,0 +1,2 @@
+org.keycloak.authentication.spi.MobileAuthenticatorFactory
+org.keycloak.authentication.VerifyFirstTimeAuthenticatorFactory
